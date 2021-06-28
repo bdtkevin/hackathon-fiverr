@@ -26,7 +26,17 @@
         }
       }
     }
+    .searchBar {
+      width: 200px;
+      border-radius: 15px;
+      border: black 2px solid;
+      outline: none;
+      margin-right: 15px;
+    }
     .userLogo {
+      :hover {
+        color: #00b22d;
+      }
     }
   }
 }

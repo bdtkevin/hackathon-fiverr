@@ -18,6 +18,11 @@ export default function Header() {
             </NavLink>
           </li>
         </ul>
+        <input
+          type='text'
+          className='searchBar'
+          placeholder=' Search your team here...'
+        />
         <img src='/img/user-logo.png' alt='userlogo' className='userLogo' />
       </div>
     </div>
