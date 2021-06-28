@@ -1,4 +1,4 @@
-import { Switch, Route } from 'react-router';
+import { Switch, Route } from 'react-router-dom';
 import Toto from './components/Toto';
 
 export default function App() {
