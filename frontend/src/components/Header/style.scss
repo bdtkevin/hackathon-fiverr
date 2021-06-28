@@ -1,29 +1,29 @@
 .header {
   width: 100vw;
   height: 80px;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   box-sizing: border-box;
   font-family: 'helvetica', sans-serif;
   box-shadow: 0px 4px 7px rgba(64, 65, 69, 0.3);
   .logo {
-    width: auto;
+    margin-left: 20px;
   }
-  .team {
+  .container {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    .createTeam {
-      padding: 25px 25px;
-      :hover {
-        color: rgba(0, 178, 45, 1);
-      }
-    }
-    .joinTeam {
-      padding: 25px 25px;
-      :hover {
-        color: rgba(0, 178, 45, 1);
+    .team {
+      display: flex;
+      align-items: center;
+      li {
+        padding: 20px;
+        :hover {
+          color: #00b22d;
+        }
+        a {
+          text-decoration: none;
+          color: black;
+        }
       }
     }
     .userLogo {
