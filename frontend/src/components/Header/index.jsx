@@ -3,7 +3,7 @@ import './style.scss';
 
 export default function Header() {
   return (
-    <div className='header'>
+    <header className='header'>
       <img src='/img/fiverrlogo.png' alt='logo' className='logo' />
       <div className='container'>
         <ul className='team'>
@@ -25,6 +25,6 @@ export default function Header() {
         />
         <img src='/img/user-logo.png' alt='userlogo' className='userLogo' />
       </div>
-    </div>
+    </header>
   );
 }
