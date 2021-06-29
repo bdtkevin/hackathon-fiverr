@@ -1,0 +1,60 @@
+.webClient {
+  width: 100%;
+  .description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    img {
+      width: 50%;
+    }
+    .paragraph {
+      h2 {
+        padding: 20px;
+        font: 700 2em 'helvetica';
+      }
+      p {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+  }
+  .findyourteam {
+    margin-left: 200px;
+    h2 {
+      padding: 20px;
+      font: 700 2em 'helvetica';
+    }
+    p {
+      padding: 20px;
+      width: 450px;
+    }
+  }
+  .gallery {
+    width: 100%;
+    .cards {
+      margin-left: 100px;
+      margin-right: 100px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      li {
+        width: 300px;
+        height: 250px;
+        margin: 15px;
+        border-radius: 20px;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
+        h3 {
+          font: 700 2em 'helvetica';
+          padding: 20px;
+        }
+        p {
+          padding: 20px;
+        }
+      }
+    }
+  }
+}
