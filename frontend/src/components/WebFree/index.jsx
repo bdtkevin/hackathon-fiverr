@@ -1,17 +1,17 @@
-import HeaderClient from '../HeaderClient';
+import HeaderFree from '../HeaderFree';
 import Footer from '../Footer';
 import './style.scss';
 
-export default function WebClient() {
+export default function WebFree() {
   return (
     <>
-      <HeaderClient />
-      <div className='webClient'>
+      <HeaderFree />
+      <div className='webFree'>
         <div className='description'>
           <img
             src='/img/webclientdraw.png'
-            alt='webClientDraw'
-            className='webClientDraw'
+            alt='webFreeDraw'
+            className='webFreeDraw'
           />
           <div className='paragraph'>
             <h2>Web</h2>

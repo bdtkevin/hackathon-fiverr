@@ -1,59 +1,57 @@
 .banner {
-  flex-wrap : wrap;
-  display : flex;
+  flex-wrap: wrap;
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin : 50px;
+  margin: 50px;
 
   h1 {
     font: 600 1.8em 'helvetica';
-    color : #00B22D;
+    color: #00b22d;
     margin-bottom: 20px;
   }
-p {
-  max-width : 500px;
-  font: 300 1em 'helvetica';
+  p {
+    max-width: 500px;
+    font: 300 1em 'helvetica';
+  }
 }
-}
-
 
 .domain {
-  margin : auto;
-  display : flex;
+  margin: auto;
+  display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  width : 80%;
+  width: 80%;
 
-  
   button {
     margin: 30px;
-    background: #FFFFFF;
-    border: 3px solid transparent ;
+    background: #ffffff;
+    border: 3px solid transparent;
     box-sizing: border-box;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
     border-radius: 20px;
-    display : flex; 
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    height : 300px;
+    height: 300px;
 
     h2 {
       font: 600 1.8em 'helvetica';
     }
   }
   .selected {
-    border: 3px solid #00B22D;
+    border: 3px solid #00b22d;
   }
   button:hover {
-      border: 3px solid #00B22D;
-      cursor: pointer;
+    border: 3px solid #00b22d;
+    cursor: pointer;
   }
 }
 
 .criteria {
-  margin : 100px;
-  display : flex ; 
+  margin: 100px;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -63,10 +61,10 @@ p {
   }
 
   select {
-    width : 150px;
-    height : 20px;
-    border : none;
-    border-bottom : 1px solid black;
+    width: 150px;
+    height: 20px;
+    border: none;
+    border-bottom: 1px solid black;
     margin: 0 10px;
     background-color: white;
     option {
@@ -74,19 +72,18 @@ p {
     }
   }
   .createButton {
-    margin : 50px;
+    margin: 50px;
     width: 200px;
-    height: 90px; 
-    background: #00B22D;
+    height: 90px;
+    background: #00b22d;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
     border-radius: 20px;
-    border : 1px solid transparent;
-    font: 600 1.8em "helvetica";
-    color : white; 
+    border: 1px solid transparent;
+    font: 600 1.8em 'helvetica';
+    color: white;
   }
   .createButton:hover {
     box-shadow: 0px 1px 4èpx rgba(0, 0, 0, 0.4);
     cursor: pointer;
   }
-
 }
