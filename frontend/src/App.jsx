@@ -11,6 +11,7 @@ import VideoMakingClient from './components/VideoMakingClient';
 import WebFree from './components/WebFree';
 import GraphismFree from './components/GraphismFree';
 import VideoMakingFree from './components/VideoMakingFree';
+import Profil from './components/Profil';
 import './reset.css';
 import './style.scss';
 
@@ -31,6 +32,7 @@ export default function App() {
           <Route path="/webfree" component={WebFree} />
           <Route path="/graphismfree" component={GraphismFree} />
           <Route path="/videomakingfree" component={VideoMakingFree} />
+          <Route path="/profil" component={Profil} />
         </Switch>
       </User.Provider>
     </div>
