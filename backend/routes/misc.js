@@ -29,25 +29,38 @@ miscRouter.get('/user/:id', async (req, res) => {
   }
 });
 
-miscRouter.get('/user_job/:id', async (req, res) => {
+miscRouter.get('/users/:id/jobs', async (req, res) => {
   try {
     const { id } = req.params;
-    const sql = 'SELECT jobs_id FROM users_has_jobs WHERE users_id = ?';
+    const sql = `
+      SELECT job_name
+      FROM 
+        jobs
+        JOIN users_has_jobs ON jobs.id=users_has_jobs.jobs_id
+      WHERE users_id=?
+    `;
 
     const sqlValues = [id];
     const [resultJobs] = await db.query(sql, sqlValues);
-    console.log(resultJobs);
-    //res.send(resultJobs);
-    console.log(resultJobs[0].jobs_id);
-    for (let i = 0; i < resultJobs.length; i++) {
-      const [resultJob] = await db.query(
-        'SELECT job_name FROM jobs WHERE id = ?',
-        resultJobs[i].jobs_id
-      );
-      console.log('toto');
-      console.log(resultJob);
-      res.send(resultJob);
-    }
+    const jobs = resultJobs.map((job) => {
+      return job.job_name;
+    });
+    res.json(jobs);
+  } catch (err) {
+    console.log(err);
+    res.status(400).send(err);
+  }
+});
+
+miscRouter.put('/user/:id/update', async (req, res) => {
+  try {
+    const { id } = req.params;
+    const sql = 'UPDATE users SET ? WHERE id = ?';
+    const sqlValues = [req.body, id];
+    const [result] = await db.query(sql, sqlValues);
+    res.status(200).send({
+      ...req.body,
+    });
   } catch (err) {
     console.log(err);
     res.status(400).send(err);
