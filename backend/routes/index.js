@@ -1,7 +1,9 @@
-const totoRouter = require('./toto');
+const authRouter = require('./auth');
+const miscRouter = require('./misc');
 
 const setupRoutes = (app) => {
-  app.use('/toto', totoRouter);
+  app.use('/auth', authRouter);
+  app.use('/', miscRouter);
 };
 
 module.exports = {

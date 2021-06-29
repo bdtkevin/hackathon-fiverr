@@ -1,0 +1,42 @@
+.header {
+  width: 100vw;
+  height: 80px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  font: 700 1.2em 'helvetica';
+  box-shadow: 0px 4px 7px rgba(64, 65, 69, 0.3);
+  .logo {
+    margin-left: 20px;
+  }
+  .container {
+    display: flex;
+    .team {
+      display: flex;
+      align-items: center;
+      li {
+        padding-right: 20px;
+        :hover {
+          color: #00b22d;
+        }
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      }
+    }
+    .searchBar {
+      width: 200px;
+      border-radius: 15px;
+      border: black 2px solid;
+      outline: none;
+      margin-right: 15px;
+    }
+    .userLogo {
+      :hover {
+        color: #00b22d;
+      }
+    }
+  }
+}
