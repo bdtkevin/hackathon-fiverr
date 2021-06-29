@@ -58,7 +58,7 @@ const handleSubmit = ()=>{
       <p>I'm a 
         <select onChange={(e)=>setJob(e.target.value)} value={job}>
         {category === "web" && <><option value="developper web">Developper web</option><option value="UI designer">UI designer</option><option value="UX designer">UX designer</option></>}
-        {category === "graphism" && <><option value="director artistic">Director artistic</option><option value="graphist">Graphist</option><option value="redactor">Redactor</option></>}
+        {category === "graphism" && <><option value="artisti cdirector">Artistic Director</option><option value="graphist">Graphist</option><option value="redactor">Redactor</option></>}
         {category === "video" && <><option value="editor">Editor</option><option value="animator">Animator</option><option value="sound designer">Sound designer</option></>}
         </select>looking for friendly people to collaborate !</p>
         
