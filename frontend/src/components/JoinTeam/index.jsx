@@ -8,7 +8,7 @@ const JoinTeam = () => {
     <>
       <HeaderFree />
       <section className="field">
-        <h2>Choose your field</h2>
+        <h2 className="choosefield">Choose your field</h2>
         <div className="containerDomain">
           <Link to="/web">
             <button className="web">
@@ -50,7 +50,7 @@ const JoinTeam = () => {
       </section>
 
       <section className="listTeam">
-        <h2>Find your team</h2>
+        <h2 className="findyourteam">Find your team</h2>
         <p className="textTeam">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
