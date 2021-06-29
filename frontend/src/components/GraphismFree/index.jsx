@@ -2,19 +2,19 @@ import Header from '../Header';
 import Footer from '../Footer';
 import './style.scss';
 
-export default function WebClient() {
+export default function GraphismFree() {
   return (
     <>
       <Header />
-      <div className='webClient'>
+      <div className='graphismFree'>
         <div className='description'>
           <img
-            src='/img/webclientdraw.png'
-            alt='webClientDraw'
-            className='webClientDraw'
+            src='/img/graphismclientdraw.png'
+            alt='graphismFreeDraw'
+            className='graphismFreeDraw'
           />
           <div className='paragraph'>
-            <h2>Web</h2>
+            <h2>Graphism</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -43,7 +43,7 @@ export default function WebClient() {
         <div className='gallery'>
           <ul className='cards'>
             <li>
-              <h3>Web</h3>
+              <h3>Graphism</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do
                 eiusmod tempor incididuntut labore et dolore magna aliqua.Ut
@@ -52,7 +52,7 @@ export default function WebClient() {
               </p>
             </li>
             <li>
-              <h3>Web</h3>
+              <h3>Graphism</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do
                 eiusmod tempor incididuntut labore et dolore magna aliqua.Ut
@@ -61,7 +61,7 @@ export default function WebClient() {
               </p>
             </li>
             <li>
-              <h3>Web</h3>
+              <h3>Graphism</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do
                 eiusmod tempor incididuntut labore et dolore magna aliqua.Ut
@@ -70,7 +70,7 @@ export default function WebClient() {
               </p>
             </li>
             <li>
-              <h3>Web</h3>
+              <h3>Graphism</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do
                 eiusmod tempor incididuntut labore et dolore magna aliqua.Ut
@@ -79,7 +79,7 @@ export default function WebClient() {
               </p>
             </li>
             <li>
-              <h3>Web</h3>
+              <h3>Graphism</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do
                 eiusmod tempor incididuntut labore et dolore magna aliqua.Ut
@@ -88,7 +88,7 @@ export default function WebClient() {
               </p>
             </li>
             <li>
-              <h3>Web</h3>
+              <h3>Graphism</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do
                 eiusmod tempor incididuntut labore et dolore magna aliqua.Ut
