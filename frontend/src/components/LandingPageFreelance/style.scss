@@ -1,0 +1,30 @@
+.LandingPageFree {
+  font-family: Arial, Helvetica, sans-serif;
+  .find {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      font-weight: bold;
+      font-size: 40px;
+      color: #00b22d;
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      margin-left: 80px;
+      font-size: 40px;
+      font-weight: bold;
+    }
+
+    p {
+      margin-top: 50px;
+      width: 500px;
+    }
+  }
+}
+
+.wip {
+  border: 2px dotted blue;
+}

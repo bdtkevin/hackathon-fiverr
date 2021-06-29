@@ -1,0 +1,101 @@
+.LandingPageFree {
+  overflow-x: hidden;
+  overflow-y: visible;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+
+  .find {
+    display: flex;
+    justify-content: center;
+
+    .textfind {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h1 {
+        font-weight: bold;
+        font-size: 40px;
+        color: #00b22d;
+        margin-bottom: 15px;
+      }
+      h2 {
+        margin-left: 80px;
+        font-size: 40px;
+        font-weight: bold;
+      }
+      p {
+        margin-top: 50px;
+        width: 500px;
+      }
+    }
+  }
+  .domains {
+    height: 133vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+
+    svg {
+      position: absolute;
+      display: flex;
+      width: 100vw;
+      height: 130vh;
+      top: -80px;
+    }
+    .container {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      z-index: 1;
+      top: 20vh;
+      .title {
+        font-size: 40px;
+        color: white;
+        align-self: flex-end;
+        margin-right: 12vw;
+        margin-bottom: 10vh;
+      }
+      .gallery {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100vw;
+      }
+    }
+  }
+  .create {
+    position: relative;
+    .container {
+      display: flex;
+
+      align-items: center;
+      position: absolute;
+      top: -250px;
+      left: 20vw;
+
+      img {
+        margin-left: 80px;
+      }
+      .textcreate {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h3 {
+          color: #00b22d;
+          font-size: 40px;
+          font-weight: bold;
+          margin-bottom: 20px;
+        }
+        p {
+          font-size: 13px;
+          margin-top: 20px;
+          width: 500px;
+        }
+      }
+    }
+  }
+}
