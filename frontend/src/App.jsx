@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Switch, Route } from 'react-router-dom';
+import LandingPageFreelance from './components/LandingPageFreelance';
 import User from './contexts/User';
-import Header from './components/Header';
 import CreateTeam from './components/CreateTeam';
 import WebClient from './components/WebClient';
 import GraphismClient from './components/GraphismClient';
@@ -10,6 +10,7 @@ import WebFree from './components/WebFree';
 import GraphismFree from './components/GraphismFree';
 import VideoMakingFree from './components/VideoMakingFree';
 import './reset.css';
+import './style.scss';
 
 export default function App() {
   const [user, setUser] = useState(null);
@@ -17,10 +18,10 @@ export default function App() {
   return (
     <div className='App'>
       <User.Provider value={{ user, setUser }}>
-        <Header />
         <Switch>
           <Route path='/create-team' component={CreateTeam} />
           <Route path='/webclient' component={WebClient} />
+          <Route path='/Freelance' component={LandingPageFreelance} />
           <Route path='/graphismclient' component={GraphismClient} />
           <Route path='/videomakingclient' component={VideoMakingClient} />
           <Route path='/webfree' component={WebFree} />
