@@ -1,6 +1,9 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
+import User from '../../contexts/User';
+import request from '../../utilities/request';
 
 export default function Login() {
+  const { user, setUser } = useContext(User);
   const [formLogin, setFormLogin] = useState({
     email: '',
     password: '',
@@ -13,7 +16,23 @@ export default function Login() {
     });
   };
 
-  const handleSubmit = () => {};
+  const handleSubmit = async () => {
+    try {
+      const { data } = await request({
+        method: 'post',
+        url: 'auth/login',
+        data: formLogin,
+      });
+      console.log(data);
+      setUser(data);
+    } catch (err) {
+      console.log('---------', err, '-----------');
+      // toast.error('Connexion impossible', {
+      //   position: 'bottom-right',
+      //   autoClose: 3000,
+      // });
+    }
+  };
 
   return (
     <>
@@ -43,7 +62,9 @@ export default function Login() {
           </button>
         </form>
       </div>
-      <div className='part-link'></div>
+      <footer>
+        <p>Already a member ?</p>
+      </footer>
     </>
   );
 }
