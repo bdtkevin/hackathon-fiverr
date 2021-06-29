@@ -1,11 +1,11 @@
-import Header from '../Header';
+import HeaderClient from '../HeaderClient';
 import Footer from '../Footer';
 import './style.scss';
 
 export default function VideoMakingClient() {
   return (
     <>
-      <Header />
+      <HeaderClient />
       <div className='videoMakingClient'>
         <div className='description'>
           <img

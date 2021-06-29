@@ -1,11 +1,11 @@
-import Header from '../Header';
+import HeaderFree from '../HeaderFree';
 import Footer from '../Footer';
 import './style.scss';
 
 export default function WebFree() {
   return (
     <>
-      <Header />
+      <HeaderFree />
       <div className='webFree'>
         <div className='description'>
           <img

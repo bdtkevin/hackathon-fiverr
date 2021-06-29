@@ -1,11 +1,11 @@
-import Header from '../Header';
+import HeaderClient from '../HeaderClient';
 import Footer from '../Footer';
 import './style.scss';
 
 export default function WebClient() {
   return (
     <>
-      <Header />
+      <HeaderClient />
       <div className='webClient'>
         <div className='description'>
           <img

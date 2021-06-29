@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import Auth from '../Auth';
 import './style.scss';
 
-export default function Header() {
+export default function HeaderClient() {
   const [displayModal, setDisplayModal] = useState(false);
 
   return (
