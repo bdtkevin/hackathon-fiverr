@@ -1,12 +1,12 @@
-import Header from '../Header';
+import HeaderFree from '../HeaderFree';
 import Footer from '../Footer';
-import image from './Rectangle.svg';
+import image from '../Rectangle.svg';
 import './style.scss';
 
 export default function LandingPageFreelance() {
   return (
     <>
-      <Header />
+      <HeaderFree />
       <div className="LandingPageFree">
         <section className="find">
           <img src="/img/LandingPageFreelance/find.png" alt="" />

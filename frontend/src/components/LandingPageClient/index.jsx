@@ -1,13 +1,13 @@
 import HeaderClient from '../HeaderClient';
 import Footer from '../Footer';
-import image from './Rectangle.svg';
+import image from '../Rectangle.svg';
 import './style.scss';
 
-export default function LandingPageFreelance() {
+export default function LandingPageClient() {
   return (
     <>
       <HeaderClient />
-      <div className="LandingPageFree">
+      <div className="LandingPageClient">
         <section className="find">
           <img src="/img/LandingPageFreelance/find.png" alt="" />
           <div className="textfind">
