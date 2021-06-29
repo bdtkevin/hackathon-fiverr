@@ -10,7 +10,7 @@ const JoinTeam = () => {
       <section className="field">
         <h2 className="choosefield">Choose your field</h2>
         <div className="containerDomain">
-          <Link to="/web">
+          <Link to="/webfree">
             <button className="web">
               <img src="/img/createTeamImg/webIllu.svg" alt="" />
               <h3>Web</h3>
@@ -22,7 +22,7 @@ const JoinTeam = () => {
               </p>
             </button>
           </Link>
-          <Link to="/graphism">
+          <Link to="/graphismfree">
             <button className="graphism">
               <img src="/img/createTeamImg/graphismIllu.svg" alt="" />
               <h3>Graphism</h3>
@@ -34,7 +34,7 @@ const JoinTeam = () => {
               </p>
             </button>
           </Link>
-          <Link to="/video">
+          <Link to="/videomakingfree">
             <button className="video">
               <img src="/img/createTeamImg/videoIllu.svg" alt="" />
               <h3>Video making</h3>

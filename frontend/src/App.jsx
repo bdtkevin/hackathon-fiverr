@@ -23,8 +23,8 @@ export default function App() {
       <User.Provider value={{ user, setUser }}>
         <Switch>
           <Route path="/landingclient" component={LandingPageClient} />
-          <Route path="/create-team" component={CreateTeam} />
-          <Route path="/join-team" component={JoinTeam} />
+          <Route path="/createteam" component={CreateTeam} />
+          <Route path="/jointeam" component={JoinTeam} />
           <Route path="/webclient" component={WebClient} />
           <Route path="/landingfreelance" component={LandingPageFreelance} />
           <Route path="/graphismclient" component={GraphismClient} />

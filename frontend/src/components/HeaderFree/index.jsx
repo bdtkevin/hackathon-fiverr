@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import Auth from '../Auth';
 import './style.scss';
 
@@ -10,16 +10,18 @@ export default function HeaderFree() {
     <>
       {displayModal && <Auth setDisplayModal={setDisplayModal} />}
       <header className="header">
-        <img src="/img/fiverrlogo.png" alt="logo" className="logo" />
+        <Link to="/">
+          <img src="/img/fiverrlogo.png" alt="logo" className="logo" />
+        </Link>
         <div className="container">
           <ul className="team">
             <li>
-              <NavLink to="/create-team" className="createTeam">
+              <NavLink to="/createteam" className="createTeam">
                 create a team
               </NavLink>
             </li>
             <li>
-              <NavLink to="/join-team" className="joinTeam">
+              <NavLink to="/jointeam" className="joinTeam">
                 join a team
               </NavLink>
             </li>

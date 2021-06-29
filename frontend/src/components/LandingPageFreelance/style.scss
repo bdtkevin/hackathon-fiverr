@@ -29,7 +29,10 @@
   .domains {
     width: 100vw;
     height: 135vh;
-
+    a {
+      text-decoration: none;
+      color: black;
+    }
     .container {
       padding-top: 300px;
       text-align: center;

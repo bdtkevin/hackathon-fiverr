@@ -1,4 +1,5 @@
 import HeaderClient from '../HeaderClient';
+import { Link } from 'react-router-dom';
 import Footer from '../Footer';
 import image from '../Rectangle.svg';
 import './style.scss';
@@ -36,37 +37,42 @@ export default function LandingPageClient() {
             <div className="container">
               <h1>Three domains of activity</h1>
               <div className="gallery">
-                <button className="web">
-                  <img src="/img/LandingPageFreelance/website.png" alt="" />
-                  <h2 className="title">Web</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi
-                  </p>
-                </button>
-
-                <button className="graphism">
-                  <img src="/img/LandingPageFreelance/graphism.png" alt="" />
-                  <h2 className="title">Graphism</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi
-                  </p>
-                </button>
-                <button className="video">
-                  <img src="/img/LandingPageFreelance/video.png" alt="" />
-                  <h2>Video Making</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi
-                  </p>
-                </button>
+                <Link to="/videomakingclient">
+                  <button className="web">
+                    <img src="/img/LandingPageFreelance/website.png" alt="" />
+                    <h2 className="title">Web</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi
+                    </p>
+                  </button>
+                </Link>
+                <Link to="/graphismclient">
+                  <button className="graphism">
+                    <img src="/img/LandingPageFreelance/graphism.png" alt="" />
+                    <h2 className="title">Graphism</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi
+                    </p>
+                  </button>
+                </Link>
+                <Link to="/videomakingfree">
+                  <button className="video">
+                    <img src="/img/LandingPageFreelance/video.png" alt="" />
+                    <h2>Video Making</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi
+                    </p>
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

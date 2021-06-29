@@ -14,15 +14,15 @@ const CreateTeam = () => {
       job: job,
     };
 
-    request({ method: 'post', url: '/create-team', data: dataToSend });
+    request({ method: 'post', url: '/createteam', data: dataToSend });
     console.log(dataToSend);
   };
 
   return (
     <>
       <HeaderFree />
-      <section className='banner'>
-        <div className='textContainer'>
+      <section className="banner">
+        <div className="textContainer">
           <h1>Create my team</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do
@@ -34,17 +34,17 @@ const CreateTeam = () => {
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </div>
-        <img src='/img/createTeamImg/teamImg.svg' alt='' />
+        <img src="/img/createTeamImg/teamImg.svg" alt="" />
       </section>
-      <section className='domain'>
+      <section className="domain">
         <button
           onClick={() => setCategory('web')}
           className={
             category === 'web' ? 'webContainer selected' : 'webContainer'
           }
         >
-          <h2 className='title'>Web</h2>
-          <img src='/img/createTeamImg/webIllu.svg' alt='' />
+          <h2 className="title">Web</h2>
+          <img src="/img/createTeamImg/webIllu.svg" alt="" />
         </button>
         <button
           className={
@@ -55,7 +55,7 @@ const CreateTeam = () => {
           onClick={() => setCategory('graphism')}
         >
           <h2>Graphism</h2>
-          <img src='/img/createTeamImg/graphismIllu.svg' alt='' />
+          <img src="/img/createTeamImg/graphismIllu.svg" alt="" />
         </button>
         <button
           className={
@@ -64,39 +64,39 @@ const CreateTeam = () => {
           onClick={() => setCategory('video')}
         >
           <h2>Video making</h2>
-          <img src='/img/createTeamImg/videoIllu.svg' alt='' />
+          <img src="/img/createTeamImg/videoIllu.svg" alt="" />
         </button>
       </section>
-      <section className='criteria'>
+      <section className="criteria">
         <p>
           I'm a
           <select onChange={(e) => setJob(e.target.value)} value={job}>
             {category === 'web' && (
               <>
-                <option value='developper web'>Developper web</option>
-                <option value='UI designer'>UI designer</option>
-                <option value='UX designer'>UX designer</option>
+                <option value="developper web">Developper web</option>
+                <option value="UI designer">UI designer</option>
+                <option value="UX designer">UX designer</option>
               </>
             )}
             {category === 'graphism' && (
               <>
-                <option value='artisti cdirector'>Artistic Director</option>
-                <option value='graphist'>Graphist</option>
-                <option value='redactor'>Redactor</option>
+                <option value="artisti cdirector">Artistic Director</option>
+                <option value="graphist">Graphist</option>
+                <option value="redactor">Redactor</option>
               </>
             )}
             {category === 'video' && (
               <>
-                <option value='editor'>Editor</option>
-                <option value='animator'>Animator</option>
-                <option value='sound designer'>Sound designer</option>
+                <option value="editor">Editor</option>
+                <option value="animator">Animator</option>
+                <option value="sound designer">Sound designer</option>
               </>
             )}
           </select>
           looking for friendly people to collaborate !
         </p>
 
-        <button onClick={() => handleSubmit()} className='createButton'>
+        <button onClick={() => handleSubmit()} className="createButton">
           Create
         </button>
       </section>
