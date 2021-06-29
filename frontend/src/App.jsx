@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import LandingPageFreelance from './components/LandingPageFreelance';
+import LandingPageClient from './components/LandingPageClient';
 import User from './contexts/User';
 import CreateTeam from './components/CreateTeam';
 import JoinTeam from './components/JoinTeam';
@@ -20,10 +21,11 @@ export default function App() {
     <div className="App">
       <User.Provider value={{ user, setUser }}>
         <Switch>
+          <Route path="/landingclient" component={LandingPageClient} />
           <Route path="/create-team" component={CreateTeam} />
           <Route path="/join-team" component={JoinTeam} />
           <Route path="/webclient" component={WebClient} />
-          <Route path="/freelance" component={LandingPageFreelance} />
+          <Route path="/landingfreelance" component={LandingPageFreelance} />
           <Route path="/graphismclient" component={GraphismClient} />
           <Route path="/videomakingclient" component={VideoMakingClient} />
           <Route path="/webfree" component={WebFree} />

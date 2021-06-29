@@ -1,13 +1,13 @@
-import HeaderFree from '../HeaderFree';
+import HeaderClient from '../HeaderClient';
 import Footer from '../Footer';
 import image from '../Rectangle.svg';
 import './style.scss';
 
-export default function LandingPageFreelance() {
+export default function LandingPageClient() {
   return (
     <>
-      <HeaderFree />
-      <div className="LandingPageFree">
+      <HeaderClient />
+      <div className="LandingPageClient">
         <section className="find">
           <img src="/img/LandingPageFreelance/find.png" alt="" />
           <div className="textfind">
@@ -71,31 +71,6 @@ export default function LandingPageFreelance() {
             </div>
           </div>
         </section>
-        <div className="create">
-          <div className="textcreate">
-            <h3>Create your own team</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <button>Create your team</button>
-          </div>
-          <img src="/img/LandingPageFreelance/create.png" alt="" />
-        </div>
       </div>
       <Footer />
     </>
