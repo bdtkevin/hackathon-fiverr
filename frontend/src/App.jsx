@@ -21,7 +21,7 @@ export default function App() {
         <Switch>
           <Route path='/create-team' component={CreateTeam} />
           <Route path='/webclient' component={WebClient} />
-          <Route path='/Freelance' component={LandingPageFreelance} />
+          <Route path='/freelance' component={LandingPageFreelance} />
           <Route path='/graphismclient' component={GraphismClient} />
           <Route path='/videomakingclient' component={VideoMakingClient} />
           <Route path='/webfree' component={WebFree} />

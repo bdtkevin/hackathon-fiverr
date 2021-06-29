@@ -14,13 +14,18 @@ export default function HeaderClient() {
         <div className='container'>
           <ul className='team'>
             <li>
-              <NavLink to='/create-a-team' className='createTeam'>
-                create a team
+              <NavLink to='/webclient' className='web'>
+                web
               </NavLink>
             </li>
             <li>
-              <NavLink to='/join-a-team' className='joinTeam'>
-                join a team
+              <NavLink to='/graphismclient' className='graphism'>
+                graphism
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to='/videomakingclient' className='videoMaking'>
+                video making
               </NavLink>
             </li>
           </ul>
