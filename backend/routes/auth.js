@@ -26,7 +26,6 @@ authRouter.post('/signup', async (req, res) => {
     const token = jwt.sign(data, jwt_secret);
     res.status(201).json(token);
   } catch (err) {
-    console.log(err);
     res.status(500).json(err);
   }
 });
