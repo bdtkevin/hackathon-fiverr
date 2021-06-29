@@ -1,7 +1,7 @@
 import { useEffect, useState, useContext } from 'react';
 import User from '../../contexts/User';
 import Login from './Login';
-import Signup from './Signup';
+import Signin from './Signin';
 import './style.scss';
 
 export default function Auth({ setDisplayModal }) {
@@ -39,7 +39,7 @@ export default function Auth({ setDisplayModal }) {
           />
         )}
         {modalContent === 'signin' && (
-          <Signup
+          <Signin
             setDisplayModal={setDisplayModal}
             setModalContent={setModalContent}
           />
