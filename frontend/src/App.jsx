@@ -32,7 +32,7 @@ export default function App() {
           <Route path="/webfree" component={WebFree} />
           <Route path="/graphismfree" component={GraphismFree} />
           <Route path="/videomakingfree" component={VideoMakingFree} />
-          <Route path="/profil" component={Profil} />
+          <Route path="/profil/:typeUser" component={Profil} />
         </Switch>
       </User.Provider>
     </div>

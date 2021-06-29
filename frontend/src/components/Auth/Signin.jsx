@@ -40,72 +40,74 @@ export default function Signup({ setDisplayModal, setModalContent }) {
 
   return (
     <>
-      <div className='modal-scroll'>
+      <div className="modal-scroll">
         <h1>Sign in</h1>
         <form onSubmit={handleSubmit}>
-          <div className='input-login'>
+          <div className="input-login">
             <input
-              type='email'
-              className='input-form email'
-              name='email'
-              placeholder='Enter your email'
+              type="email"
+              className="input-form email"
+              name="email"
+              placeholder="Enter your email"
               value={formSignin.email}
               onChange={handleInput}
             />
             <input
-              type='password'
-              className='input-form password'
-              name='password'
-              placeholder='Enter your password'
+              type="password"
+              className="input-form password"
+              name="password"
+              placeholder="Enter your password"
               value={formSignin.password}
               onChange={handleInput}
             />
           </div>
-          <div className='input-infos'>
+          <div className="input-infos">
             <input
-              type='text'
-              className='input-form pseudo'
-              name='display_name'
-              placeholder='Pseudo'
+              type="text"
+              className="input-form pseudo"
+              name="display_name"
+              placeholder="Pseudo"
               value={formSignin.display_name}
               onChange={handleInput}
             />
             <input
-              type='text'
-              className='input-form firstname'
-              name='firstname'
-              placeholder='Firstname'
+              type="text"
+              className="input-form firstname"
+              name="firstname"
+              placeholder="Firstname"
               value={formSignin.firstname}
               onChange={handleInput}
             />
             <input
-              type='text'
-              className='input-form lastname'
-              name='lastname'
-              placeholder='Lastname'
+              type="text"
+              className="input-form lastname"
+              name="lastname"
+              placeholder="Lastname"
               value={formSignin.lastname}
               onChange={handleInput}
             />
             <input
-              type='date'
-              className='input-form brithday'
-              name='birthday'
-              placeholder='Enter your birthday'
+              type="date"
+              className="input-form brithday"
+              name="birthday"
+              placeholder="Enter your birthday"
               value={formSignin.birthday}
               onChange={handleInput}
             />
           </div>
-          {error && <p className='txt-error'>Please fill all fields</p>}
-          <button type='submit' className='btn'>
-            <p className='btn-text'>Continue</p>
+          {error && (
+            <p className="txt-error">Error while creating the account</p>
+          )}
+          <button type="submit" className="btn">
+            <p className="btn-text">Continue</p>
           </button>
         </form>
       </div>
       <footer>
         <p>Already a member ?</p>
         <button
-          type='button'
-          className='btn-footer'
+          type="button"
+          className="btn-footer"
           onClick={() => {
             setModalContent('login');
           }}
