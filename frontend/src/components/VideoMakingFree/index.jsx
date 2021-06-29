@@ -1,11 +1,11 @@
-import Header from '../Header';
+import HeaderFree from '../HeaderFree';
 import Footer from '../Footer';
 import './style.scss';
 
 export default function VideoMakingFree() {
   return (
     <>
-      <Header />
+      <HeaderFree />
       <div className='videoMakingFree'>
         <div className='description'>
           <img

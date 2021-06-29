@@ -1,11 +1,11 @@
-import Header from '../Header';
+import HeaderClient from '../HeaderClient';
 import Footer from '../Footer';
 import './style.scss';
 
 export default function GraphismClient() {
   return (
     <>
-      <Header />
+      <HeaderClient />
       <div className='graphismClient'>
         <div className='description'>
           <img

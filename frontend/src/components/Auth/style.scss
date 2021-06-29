@@ -37,6 +37,10 @@
           padding: 12px;
           margin-bottom: 16px;
           outline: none;
+
+          &::placeholder {
+            color: #adb0b9;
+          }
         }
 
         .txt-error {
@@ -67,6 +71,11 @@
             font-size: 16px;
             color: #fff;
           }
+        }
+
+        .input-login {
+          margin-bottom: 16px;
+          border-bottom: 1px solid #dadbdd;
         }
       }
     }

@@ -36,7 +36,7 @@ export default function Login({ setDisplayModal, setModalContent }) {
   return (
     <>
       <div className='modal-scroll'>
-        <h1>Log in</h1>
+        <h1 className='login-title'>Log in</h1>
         <form onSubmit={handleSubmit}>
           <div>
             <input

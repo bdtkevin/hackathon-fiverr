@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Header from '../Header';
+import HeaderFree from '../HeaderFree';
 import Footer from '../Footer';
 import './style.scss';
 import request from '../../utilities/request.js';
@@ -20,7 +20,7 @@ const CreateTeam = () => {
 
   return (
     <>
-      <Header />
+      <HeaderFree />
       <section className='banner'>
         <div className='textContainer'>
           <h1>Create my team</h1>
