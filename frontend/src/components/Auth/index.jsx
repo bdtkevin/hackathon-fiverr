@@ -6,7 +6,7 @@ import './style.scss';
 
 export default function Auth({ setDisplayModal }) {
   const [modalContent, setModalContent] = useState('login');
-  const { user, setUser } = useContext(User);
+  const { user } = useContext(User);
 
   const closeModal = () => {
     setDisplayModal(false);
@@ -20,6 +20,9 @@ export default function Auth({ setDisplayModal }) {
 
   useEffect(() => {
     window.addEventListener('click', handleClick);
+    if (user) {
+      setModalContent('disconnect');
+    }
 
     return () => {
       window.removeEventListener('click', handleClick);
@@ -29,8 +32,18 @@ export default function Auth({ setDisplayModal }) {
   return (
     <div id='modal-auth'>
       <div className='modal-content'>
-        {modalContent === 'login' && <Login />}
-        {modalContent === 'signup' && <Signup />}
+        {modalContent === 'login' && (
+          <Login
+            setDisplayModal={setDisplayModal}
+            setModalContent={setModalContent}
+          />
+        )}
+        {modalContent === 'signin' && (
+          <Signup
+            setDisplayModal={setDisplayModal}
+            setModalContent={setModalContent}
+          />
+        )}
       </div>
     </div>
   );

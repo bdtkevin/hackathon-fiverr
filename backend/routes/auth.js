@@ -33,7 +33,10 @@ authRouter.post('/signup', async (req, res) => {
 
 authRouter.post('/login', passport.authenticate('local'), (req, res) => {
   const token = jwt.sign(req.user, jwt_secret);
-  res.status(200).json(token);
+  res.status(200).json({
+    ...req.user,
+    token: token,
+  });
 });
 
 module.exports = authRouter;
