@@ -2,19 +2,19 @@ import Header from '../Header';
 import Footer from '../Footer';
 import './style.scss';
 
-export default function GraphismClient() {
+export default function VideoMakingFree() {
   return (
     <>
       <Header />
-      <div className='graphismClient'>
+      <div className='videoMakingFree'>
         <div className='description'>
           <img
-            src='/img/graphismclientdraw.png'
-            alt='graphismClientDraw'
-            className='graphismClientDraw'
+            src='/img/videomakingclientdraw.png'
+            alt='videoMakingFreeDraw'
+            className='videoMakingFreeDraw'
           />
           <div className='paragraph'>
-            <h2>Graphism</h2>
+            <h2>Video Making</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -43,7 +43,7 @@ export default function GraphismClient() {
         <div className='gallery'>
           <ul className='cards'>
             <li>
-              <h3>Graphism</h3>
+              <h3>Video Making</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do
                 eiusmod tempor incididuntut labore et dolore magna aliqua.Ut
@@ -52,7 +52,7 @@ export default function GraphismClient() {
               </p>
             </li>
             <li>
-              <h3>Graphism</h3>
+              <h3>Video Making</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do
                 eiusmod tempor incididuntut labore et dolore magna aliqua.Ut
@@ -61,7 +61,7 @@ export default function GraphismClient() {
               </p>
             </li>
             <li>
-              <h3>Graphism</h3>
+              <h3>Video Making</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do
                 eiusmod tempor incididuntut labore et dolore magna aliqua.Ut
@@ -70,7 +70,7 @@ export default function GraphismClient() {
               </p>
             </li>
             <li>
-              <h3>Graphism</h3>
+              <h3>Video Making</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do
                 eiusmod tempor incididuntut labore et dolore magna aliqua.Ut
@@ -79,7 +79,7 @@ export default function GraphismClient() {
               </p>
             </li>
             <li>
-              <h3>Graphism</h3>
+              <h3>Video Making</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do
                 eiusmod tempor incididuntut labore et dolore magna aliqua.Ut
@@ -88,7 +88,7 @@ export default function GraphismClient() {
               </p>
             </li>
             <li>
-              <h3>Graphism</h3>
+              <h3>Video Making</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do
                 eiusmod tempor incididuntut labore et dolore magna aliqua.Ut

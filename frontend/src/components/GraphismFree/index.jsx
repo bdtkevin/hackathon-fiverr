@@ -2,16 +2,16 @@ import Header from '../Header';
 import Footer from '../Footer';
 import './style.scss';
 
-export default function GraphismClient() {
+export default function GraphismFree() {
   return (
     <>
       <Header />
-      <div className='graphismClient'>
+      <div className='graphismFree'>
         <div className='description'>
           <img
             src='/img/graphismclientdraw.png'
-            alt='graphismClientDraw'
-            className='graphismClientDraw'
+            alt='graphismFreeDraw'
+            className='graphismFreeDraw'
           />
           <div className='paragraph'>
             <h2>Graphism</h2>
