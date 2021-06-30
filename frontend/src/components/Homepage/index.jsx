@@ -14,11 +14,6 @@ const Homepage = ()=> {
       <ClientSvg />
       <FreelanceSvg/>
   </div>
-  <footer>
-        <img src='/img/fiverrlogo.png' alt='logo' />
-        <p>Privacy policy | Terms of service</p>
-        <p>© Fiverr International Ltd. 2020</p>
-  </footer>
   </div>
   </>)
 }

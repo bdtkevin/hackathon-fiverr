@@ -1,5 +1,8 @@
-export default function FreelaneSvg(){
-  return(
+import { Link } from 'react-router-dom';
+
+const FreelanceSvg = () =>{
+  return(<>
+    <Link to="/landingfreelance" className="linkHomepage">
     <div className="freelance">
     <svg width="959" height="826" viewBox="0 0 959 826" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="undraw_digital_nomad_9kgl 1" clip-path="url(#clip0)">
@@ -342,5 +345,10 @@ export default function FreelaneSvg(){
 </svg>
 <h1 className="titleHomepage">I am a<br/>freelance</h1>
 </div>
+</Link>
+</>
   )
 }
+
+
+export default FreelanceSvg
