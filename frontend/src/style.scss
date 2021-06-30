@@ -1,6 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   width: 100vw;
   overflow-x: hidden;
   font-family: Helvetica;
-  box-sizing: border-box;
+}
+
+.App {
+  padding-top: 80px;
 }

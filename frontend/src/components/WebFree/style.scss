@@ -1,4 +1,4 @@
-.graphismFree {
+.webFree {
   width: 100%;
   .description {
     display: flex;
@@ -48,6 +48,10 @@
         margin: 15px;
         border-radius: 20px;
         box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
+        &:hover {
+          border: 3px solid #00b22d;
+          cursor: pointer;
+        }
         h3 {
           font: 700 2em 'helvetica';
           padding: 20px;

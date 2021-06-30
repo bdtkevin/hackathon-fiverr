@@ -6,14 +6,14 @@ export default function GraphismClient() {
   return (
     <>
       <HeaderClient />
-      <div className='graphismClient'>
-        <div className='description'>
+      <div className="graphismClient">
+        <div className="description">
           <img
-            src='/img/graphismclientdraw.png'
-            alt='graphismClientDraw'
-            className='graphismClientDraw'
+            src="/img/graphismclientdraw.png"
+            alt="graphismClientDraw"
+            className="graphismClientDraw"
           />
-          <div className='paragraph'>
+          <div className="paragraph">
             <h2>Graphism</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -31,7 +31,7 @@ export default function GraphismClient() {
             </p>
           </div>
         </div>
-        <div className='findyourteam'>
+        <div className="findyourteam">
           <h2>Find Your Team</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -40,8 +40,8 @@ export default function GraphismClient() {
             aliquip ex ea commodo consequat.
           </p>
         </div>
-        <div className='gallery'>
-          <ul className='cards'>
+        <div className="gallery">
+          <ul className="cards">
             <li>
               <h3>Graphism</h3>
               <p>
