@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import Header from '../Header'
+import Header from '../HeaderFree'
 import Footer from '../Footer'
 import './style.scss'
 

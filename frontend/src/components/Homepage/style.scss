@@ -1,0 +1,63 @@
+.main {
+  height : 100vh;
+  width : 100vw;
+}
+
+header {
+top: 0;
+left: 0;
+width: 100vw;
+height: 80px;
+padding: 20px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+font: 700 1.2em 'helvetica';
+background-color: #fff;
+}
+
+.logoHomepage {
+  margin-left: 20px;
+  margin-top : 20px;
+}
+.titleHomepage {
+  font: 600 1.6em "helvetica";
+}
+
+
+.content {
+  display : flex; 
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width : 80vw; 
+  margin : auto;
+}
+svg {
+  height: 60%;
+  width : auto;
+ 
+}
+
+.client,.freelance {
+  height : 600px;
+  border : 1px solid blue;
+}
+
+.footerHomepage {
+display : flex;
+align-items: center;
+margin-top : 30px;
+width : 100%;
+border : 1px solid red ; 
+
+img {
+  width : 80px;
+  height : auto;
+  margin-left: 20px;
+}
+p {
+  font: 400 1.1em "helvetica";
+  margin : 30px;
+}
+}

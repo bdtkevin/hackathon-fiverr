@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Switch, Route } from 'react-router-dom';
+import Homepage from './components/Homepage';
 import LandingPageFreelance from './components/LandingPageFreelance';
 import User from './contexts/User';
 import CreateTeam from './components/CreateTeam';
@@ -15,6 +16,7 @@ import './reset.css';
 import './style.scss';
 
 
+
 export default function App() {
   const [user, setUser] = useState(null);
 
@@ -22,6 +24,7 @@ export default function App() {
     <div className='App'>
       <User.Provider value={{ user, setUser }}>
         <Switch>
+          <Route exact path='/' component={Homepage} />
           <Route path='/create-team' component={CreateTeam} />
           <Route path='/join-team' component={JoinTeam} />
           <Route path='/webclient' component={WebClient} />
