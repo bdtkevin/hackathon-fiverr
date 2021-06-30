@@ -61,7 +61,7 @@ export default function Profil() {
     <>
       {typeUser === 'client' ? <HeaderClient /> : <HeaderFree />}
       <div className="Profil">
-        {user && (
+        {user ? (
           <>
             <button
               type="button"
@@ -111,6 +111,11 @@ export default function Profil() {
               })}
             </section>
           </>
+        ) : (
+          <section className="banner jobs">
+            <h1>You are disconnected</h1>
+            <h1>༼ ༎ຶ ෴ ༎ຶ༽</h1>
+          </section>
         )}
       </div>
     </>
