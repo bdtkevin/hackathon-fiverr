@@ -1,6 +1,8 @@
 .main {
   height : 100vh;
   width : 100vw;
+  margin-top : -80px;
+  overflow: hidden;
 }
 
 header {
@@ -22,6 +24,7 @@ background-color: #fff;
 }
 .titleHomepage {
   font: 600 1.6em "helvetica";
+  color : black;
 }
 
 
@@ -30,7 +33,8 @@ background-color: #fff;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  width : 80vw; 
+  width : 100%;
+  height : 100%; 
   margin : auto;
 }
 svg {
@@ -41,23 +45,16 @@ svg {
 
 .client,.freelance {
   height : 600px;
-  border : 1px solid blue;
+  text-align: center;
+ }
+
+.linkHomepage {
+  text-decoration: none;
 }
 
-.footerHomepage {
-display : flex;
-align-items: center;
-margin-top : 30px;
-width : 100%;
-border : 1px solid red ; 
-
-img {
-  width : 80px;
-  height : auto;
-  margin-left: 20px;
-}
-p {
-  font: 400 1.1em "helvetica";
-  margin : 30px;
-}
+@media (max-width: 900px) {
+  .client,.freelance {
+    height : 300px;
+ 
+   }
 }

@@ -37,7 +37,7 @@ export default function LandingPageClient() {
             <div className="container">
               <h1>Three domains of activity</h1>
               <div className="gallery">
-                <Link to="/videomakingclient">
+                <Link to="/webclient">
                   <button className="web">
                     <img src="/img/LandingPageFreelance/website.png" alt="" />
                     <h2 className="title">Web</h2>

@@ -9,12 +9,10 @@ authRouter.post('/signup', async (req, res) => {
   try {
     const data = req.body;
     data.password = bcrypt.hashSync(data.password, jwt_rounds);
-    const jobs = data.job_id;
+    const jobs = data.jobs_id;
     delete data.jobs_id;
 
     const [resultsUser] = await db.query('INSERT INTO users SET ?', data);
-    console.log(resultsUser.insertId);
-
     // (caca)
     for (let i = 0; i < jobs.length; i++) {
       const [resultsLink] = await db.query(
@@ -25,8 +23,12 @@ authRouter.post('/signup', async (req, res) => {
     delete data.password;
     data.id = resultsUser.insertId;
     const token = jwt.sign(data, jwt_secret);
-    res.status(201).json(token);
+    res.status(201).json({
+      ...data,
+      token: token,
+    });
   } catch (err) {
+    console.log(err);
     res.status(500).json(err);
   }
 });

@@ -98,7 +98,9 @@ export default function LandingPageFreelance() {
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
-            <button>Create your team</button>
+            <Link to="/createteam">
+              <button>Create your team</button>
+            </Link>
           </div>
           <img src="/img/LandingPageFreelance/create.png" alt="" />
         </div>

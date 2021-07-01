@@ -1,14 +1,7 @@
-<<<<<<< HEAD
-import { Link } from 'react-router-dom'
-import Header from '../HeaderFree'
-import Footer from '../Footer'
-import './style.scss'
-=======
 import { Link } from 'react-router-dom';
 import HeaderFree from '../HeaderFree';
 import Footer from '../Footer';
 import './style.scss';
->>>>>>> a66a6b00570a20904f9c2a8ccc40303f39506c33
 
 const JoinTeam = () => {
   return (

@@ -1,5 +1,8 @@
+import {Link} from 'react-router-dom'
+
 export default function FreelaneSvg(){
   return(
+    <Link to="/landingclient" className="linkHomepage">
     <div className="client">
 <svg width="1117" height="858" viewBox="0 0 1117 858" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="undraw_add_to_cart_vkjp 1" clip-path="url(#clip0)">
@@ -118,5 +121,6 @@ export default function FreelaneSvg(){
 </svg>
 <h1 className="titleHomepage">I have a<br/>project</h1>
     </div>
+    </Link>
   )
 }

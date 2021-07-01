@@ -3,6 +3,7 @@ import { useParams, useHistory } from 'react-router-dom';
 import User from '../../contexts/User';
 import HeaderClient from '../HeaderClient';
 import HeaderFree from '../HeaderFree';
+import Footer from '../Footer';
 // import request from '../../utilities/request';
 import './style.scss';
 
@@ -118,6 +119,7 @@ export default function Profil() {
           </section>
         )}
       </div>
+      <Footer />
     </>
   );
 }

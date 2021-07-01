@@ -32,9 +32,12 @@ export default function Signup({ setDisplayModal, setModalContent }) {
       });
       setError(false);
       setUser(data);
+      console.log(data);
       setDisplayModal(false);
     } catch (err) {
       setError(true);
+    } finally {
+      setModalContent(false);
     }
   };
 
